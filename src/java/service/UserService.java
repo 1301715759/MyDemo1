@@ -1,7 +1,6 @@
-package com.service;
+package service;
 
-import com.dao.UserDao;
-import com.dao.UserDao;
+import dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +13,11 @@ public class UserService {
         this.userDao = userDao;
     }
 
-    public boolean hasMatch(String username,String password){
-        int count=userDao.ValidUser(username,password);
+    public boolean Match(String username,String password){
+        int count=userDao.FindUser(username,password);
         return count>0;
+    }
+    public void InsertUser(String username, String password) {
+        userDao.InsertUser(username,password);
     }
 }
