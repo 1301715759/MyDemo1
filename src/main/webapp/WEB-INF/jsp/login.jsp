@@ -11,8 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-${error}
-<form action="<c:url value="/login"/>" method="post">
+
+<form method="post" action="<c:url value='/login'/>">
     用户名:<input type="text" name="username"><br>
     密码:<input type="password" name="password"><br>
     <input type="submit" value="登录">

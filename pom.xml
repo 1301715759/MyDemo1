@@ -18,10 +18,10 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <file.encoding>UTF-8</file.encoding>
-    <spring.version>4.2.2.RELEASE</spring.version>
+    <spring.version>5.2.3.RELEASE</spring.version>
     <servlet.version>3.0-alpha-1</servlet.version>
     <aspectj.version>1.8.1</aspectj.version>
-    <commons-codec.version>1.9</commons-codec.version>
+    <commons-codec.version>1.15</commons-codec.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
     <jetty.version>8.1.8.v20121106</jetty.version>
@@ -99,6 +99,17 @@
       <version>8.0.28</version>
     </dependency>
 
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.9</version>
+    </dependency>
   </dependencies>
 
   <build>
