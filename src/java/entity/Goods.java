@@ -9,7 +9,7 @@ public class Goods {
     private Integer goodstype_id;
     private MultipartFile logoImage;
     private String gpicture;
-
+    private Integer status;
     public Integer getId() {
         return id;
     }
@@ -49,4 +49,13 @@ public class Goods {
     public void setGpicture(String gpicture) {
         this.gpicture = gpicture;
     }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
 }
