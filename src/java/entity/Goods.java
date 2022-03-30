@@ -1,10 +1,14 @@
 package entity;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class Goods {
     private Integer id;
     private String gname;
     private String typename;
     private Integer goodstype_id;
+    private MultipartFile logoImage;
+    private String gpicture;
 
     public Integer getId() {
         return id;
@@ -36,5 +40,13 @@ public class Goods {
 
     public void setGoodstype_id(Integer goodstype_id) {
         this.goodstype_id = goodstype_id;
+    }
+
+    public MultipartFile getLogoImage() {
+        return logoImage;
+    }
+
+    public void setGpicture(String gpicture) {
+        this.gpicture = gpicture;
     }
 }
