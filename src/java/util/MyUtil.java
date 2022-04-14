@@ -1,5 +1,8 @@
 package util;
 
+import entity.User;
+
+import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -12,5 +15,8 @@ public class MyUtil {
         return  id;
     }
 
-
+    public static Integer getUserId(HttpSession session) {
+        User user = (User)session.getAttribute("user");
+        return user.getId();
+    }
 }

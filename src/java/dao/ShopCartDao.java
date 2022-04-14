@@ -13,7 +13,7 @@ public interface ShopCartDao {
     public List<Map<String, Object>> isFocus(Map<String, Object> map);
 
     public int addCart (Map<String, Object> map);
-    public List<Map<String, Object>> isPutCart(Map<String, Object> map);
+    public List<Map<String, Object>> isAddCart(Map<String, Object> map);
     public int updateCart (Map<String, Object> map);
     public List<Map<String, Object>> selectCart(Integer id);
 

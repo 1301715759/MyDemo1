@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service("indexService")
 @Transactional
-public class IndexServicemlp implements IndexService{
+public class IndexServicempl implements IndexService{
     @Autowired
     private IndexDao indexDao;
     @Autowired
